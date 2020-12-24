@@ -2,7 +2,7 @@
 
 1. clone the repo using following command
 ```textmate
-    git clone 
+    git clone https://github.com/cricindian/searchsuggestion.git
 ```
 2. import the project in intellij as a ``maven`` project
 3. Run the main SearchApplication.java
