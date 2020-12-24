@@ -11,6 +11,16 @@
 6. /api/v1/palindrome , is mapped to access the largest palindrome for a given string.
 
 ## Search Suggestion OR AutoComplete
+```textmate
+Trie DS is used to store all the contacts, helps in suggesting autocomplete in search.
+
+TrieNode has a child HashMap<Character , TrieNode> and isLast to identify last character.
+Each HashMap stores 1. n number of key characters with 2. TrieNode value which inturn stores above 2
+This forms a tree of words linked by a character at each level until leaf node.
+
+We find all possible words that can be suggested by doing DFS on this tree.
+
+```
 
 ## EndPoints
 
@@ -67,6 +77,13 @@ curl --location --request GET 'http://localhost:9000/api/v1/search/suggest/sa'
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 ## Find the largest Palindrome from given line of string
+
+```textmate
+considering single mid point for string with odd length.
+considering two character, at position i & i+1 as mid point for string with even length.
+expanding from mid towards start and end until  characters from mid towards left and right are matching && mid stays with in string length bounderis.
+we get low , and high points in the string, which is a substring palindrome. We repeat this process until we find a max palindrome string.
+```
 
 ## EndPoints
 
