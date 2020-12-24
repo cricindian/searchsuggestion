@@ -1,4 +1,4 @@
-###Setting up the project
+### Setting up the project
 
 1. clone the repo using following command
 ```textmate
