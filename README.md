@@ -18,7 +18,7 @@ TrieNode has a child HashMap<Character , TrieNode> and isLast to identify last c
 Each HashMap stores 1. n number of key characters with 2. TrieNode value which inturn stores above 2
 This forms a tree of words linked by a character at each level until leaf node.
 
-We find all possible words that can be suggested by doing DFS on this tree.
+We find all possible words that can be suggested by doing DFS on this tree from root to leaf node.
 
 ```
 
