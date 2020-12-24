@@ -19,36 +19,36 @@
 POST /search/addSuggestions
 ```
 
-#####Curl Request
+##### Curl Request
 ```curl
 curl --location --request POST 'http://localhost:9000/api/v1/search/addSuggestions' \
 --header 'Content-Type: application/json' \
 --data-raw '["Santosh", "sanket"]'
 ```
 
-#####Post body
+##### Post body
 ```json
 ["Santosh", "sanket"]
 ```
 
-#####Response 
+##### Response 
 ```json
 201 Created (All contacts are added to contact book)
 202 Accepted (Some contacts are not added , because of length constraint which is < 10)
 ```
 
 
-###Get Search suggestion
+### Get Search suggestion
 ```textmate
 GET /search/suggest/{contact}
 ```
 
-#####Curl Request
+##### Curl Request
 ```textmate
 curl --location --request GET 'http://localhost:9000/api/v1/search/suggest/sa'
 ```
 
-#####Response 
+##### Response 
 ```json
 {
     "s": [
@@ -70,17 +70,17 @@ curl --location --request GET 'http://localhost:9000/api/v1/search/suggest/sa'
 
 ## EndPoints
 
-###Get Search suggestion
+### Get Search suggestion
 ```textmate
 GET /palindrome/largestPalindrome/{line}
 ```
 
-#####Curl Request
+##### Curl Request
 ```textmate
 curl --location --request GET 'http://localhost:9000/api/v1/palindrome/largestPalindrome/HelloWelcomeemoclewHelloolle'
 ```
 
-#####Response 
+##### Response 
 ```json
 Welcomeemoclew
 ```
