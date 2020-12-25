@@ -7,6 +7,8 @@ public class LargestPalindrome {
     private int lo, maxLen;
 
     public String longestPalindrome(String s) {
+        lo = 0;
+        maxLen = 0;
         int len = s.length();
         if (len < 2)
             return s;
